@@ -1,6 +1,11 @@
 ﻿# imgtogba
 
-This program converts GIF/PNG/JPG images into a const unsigned 16-bit bitmap array suitable for use in GBA C/C++ programs. Platform is Windows, current version is `1.0`.
+This program converts GIF/PNG/JPG images into a const unsigned 16-bit bitmap array suitable for use in GBA C/C++ programs. Platform is Windows, current version is `1.01`.
+
+# Version History
+
+- 1.01: added true color alpha channel transparency support
+- 1.0: first release
 
 # Compiling
 
@@ -19,7 +24,7 @@ FEDCBA9876543210
 tbbbbbgggggrrrrr
 ```
 
-- Nonstandard transparent bit F (`0x8000`) may only be set if transparent mode is on and source is a GIF/PNG with a single transparent palette color.
+- Nonstandard transparent bit F (`0x8000`) will only be set if transparent mode is on.
 
 # Usage
 
